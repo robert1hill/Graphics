@@ -17,11 +17,19 @@ public class MyFrame extends JFrame
         
     }
     
+    public void paintLine()
+    {
+        panel = new LineDemoPanel();
+        add(panel);
+        setVisible(true);
+    }
+    
     
     public static void main(String[] args)
     {
         
         MyFrame frame = new MyFrame("Hello");
+        frame.paintLine();
 
     }
 

@@ -32,6 +32,14 @@ public class MyFrame extends JFrame
         
     }
     
+    public void paintOval()
+    {
+        panel = new OvalDemoPanel();
+        add(panel);
+        setVisible(true);
+        
+    }
+    
     
     public static void main(String[] args)
     {
@@ -41,6 +49,9 @@ public class MyFrame extends JFrame
         
         MyFrame frame1 = new MyFrame("Rectangle");
         frame1.paintRectangle();
+        
+        MyFrame frame2 = new MyFrame("Oval");
+        frame2.paintOval();
 
     }
 
